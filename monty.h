@@ -40,4 +40,15 @@ typedef struct instruction_s
 } instruction_t;
 
 int tokenizar(char *line, int i);
+void get_function();
+
+ void _push(stack **, unsigned int);
+ void _pall(stack **, unsigned int);
+ void _pint(stack **, unsigned int);
+ void _pop(stack **, unsigned int);
+ void _swap(stack **, unsigned int);
+ void _nop(stack **, unsigned int);
+ void _add(stack **, unsigned int);
+
+
 #endif

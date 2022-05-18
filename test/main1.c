@@ -16,7 +16,7 @@
 int main (int argc, char* argv[])
 {
     if (argc > 2)
-        printf("Error, To Many Arguments\n");
+        printf("Error, Too Many Arguments\n");
     else
         printf("First %s \n", argv[1]);
     return (0);

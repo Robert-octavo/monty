@@ -1,27 +1,24 @@
 #include "monty.h"
+
 /**
  * main - monty
- * 
- * @param argc 
- * @param argv 
- * @return int 
+ * @argc: integer number of arguments
+ * @argv: Array with the arguments
+ * Return: Always zero
  */
-/*
-* add to the header the prototype (tokenizar)
-*/
-int main (int argc, char **argv)
+
+int main(int argc, char **argv)
 {
-    if (argc > 2)
-    {
-        printf("USAGE: monty file\n");
-        exit(EXIT_FAILURE);
-    }
-    else
-    {
-/*Check for the file*/
-        printf("First %s \n", argv[1]);
-        /*FILE *file;*/
-        o_file(argv[1]);
-    }
-    return (0);
+	if (argc > 2)
+	{
+		printf("USAGE: monty file\n");
+		exit(EXIT_FAILURE);
+	}
+	else
+	{
+/*Check for the file - if i get the path from argv*/
+		printf("First %s \n", argv[1]);
+		o_file(argv[1]);
+	}
+	return (0);
 }

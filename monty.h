@@ -39,16 +39,18 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+void o_file(char *file_path);
+void r_file(FILE *file);
 int tokenizar(char *line, int i);
 void get_function();
 
- void _push(stack **, unsigned int);
- void _pall(stack **, unsigned int);
- void _pint(stack **, unsigned int);
- void _pop(stack **, unsigned int);
- void _swap(stack **, unsigned int);
- void _nop(stack **, unsigned int);
- void _add(stack **, unsigned int);
+ void _push(stack_t **, unsigned int);
+ void _pall(stack_t  **, unsigned int);
+ void _pint(stack_t **, unsigned int);
+ void _pop(stack_t  **, unsigned int);
+ void _swap(stack_t  **, unsigned int);
+ void _nop(stack_t  **, unsigned int);
+ void _add(stack_t  **, unsigned int);
 
 
 #endif

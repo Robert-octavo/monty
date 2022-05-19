@@ -25,7 +25,7 @@ void function_call(op_func function, char *code, char *value, int i)
 		printf("L%d: usage: push integer\n", i);
 			exit(EXIT_FAILURE);
 		}
-		for (j = 0; valuei[j] != '\0'; j++)
+		for (j = 0; value[j] != '\0'; j++)
 		{
 			if (isdigit(value[j]) == 0)
 			{

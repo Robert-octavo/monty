@@ -11,7 +11,7 @@ void _swap(stack_t  **stack, __attribute__((__unused__)) unsigned int i)
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
 	{
-		printf("L%d: can't swap, stack too short\n", i);
+		dprintf(2, "L%d: can't swap, stack too short\n", i);
 		_free();
 		exit(EXIT_FAILURE);
 	}

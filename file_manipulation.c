@@ -11,7 +11,7 @@ void o_file(char *file_path)
 
 	if (file_path == NULL)
 	{
-		printf("Error: Can't open file %s\n", file_path);
+		dprintf(2, "Error: Can't open file %s\n", file_path);
 		_free();
 		exit(EXIT_FAILURE);
 	}
@@ -20,7 +20,7 @@ void o_file(char *file_path)
 /*if the return of access it is -1 - cannot acces the file*/
 	if (file_exist == -1)
 	{
-		printf("Error: Can't open file %s\n", file_path);
+		dprintf(2, "Error: Can't open file %s\n", file_path);
 		_free();
 		exit(EXIT_FAILURE);
 	}
@@ -28,13 +28,13 @@ void o_file(char *file_path)
 	file = fopen(file_path, "r");
 	if (file == NULL)
 	{
-		printf("Error: Can't open file %s\n", file_path);
+		dprintf(2, "Error: Can't open file %s\n", file_path);
 		_free();
 		exit(EXIT_FAILURE);
 	}
 
 /* Read the File*/
-	r_file(file);
+	r_file(file, file_path);
 /*close the file*/
 	fclose(file);
 }
@@ -44,8 +44,9 @@ void o_file(char *file_path)
  * r_file - Fucntion that read the content of a file
  * line by line
  * @file: Pointer to the file
+ * @file_path: path of the file
  */
-void r_file(FILE *file)
+void r_file(FILE *file, char* file_path)
 {
 	/*count the lines*/
 	int i = 0;
@@ -58,7 +59,7 @@ void r_file(FILE *file)
 
 	if (file == NULL)
 	{
-		printf("Error: Can't open file %s\n", "file name");
+		dprintf(2, "Error: Can't open file %s\n", file_path);
 		_free();
 		exit(EXIT_FAILURE);
 	}

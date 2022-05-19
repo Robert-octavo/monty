@@ -15,7 +15,7 @@ int tokenizar(char *line, int i, int check_token)
 
 	if (line == NULL)
 	{
-		printf("Error: \n");
+		dprintf(2, "Error: \n");
 		exit(EXIT_FAILURE);
 	}
 	code = strtok(line, "\t\n ");

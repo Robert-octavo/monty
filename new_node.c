@@ -13,7 +13,7 @@ stack_t *new_node(int n)
 
 	if (new_node == NULL)
 	{
-		printf("Error: malloc failed\n");
+		dprintf(2, "Error: malloc failed\n");
 		/*free before exit*/
 		_free();
 		exit(EXIT_FAILURE);

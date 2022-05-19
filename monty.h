@@ -42,7 +42,7 @@ typedef void (*op_func)(stack_t **, unsigned int);
 extern stack_t *head;
 
 void o_file(char *file_path);
-void r_file(FILE *file);
+void r_file(FILE *file, char *file_path);
 int tokenizar(char *, int, int);
 void get_function(char *, char *, int);
 void function_call(op_func, char *, char *, int);

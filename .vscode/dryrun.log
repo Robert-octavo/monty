@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/robert/Holberton/monty'
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 tokenizar.c file_manipulation.c function_call.c get_function.c new_node.c _push.c _pall.c _free.c _nop.c _pint.c main.c -o monty && ./monty bytecodes/06.m
+make: Leaving directory '/home/robert/Holberton/monty'
+ 

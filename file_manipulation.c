@@ -46,7 +46,7 @@ void o_file(char *file_path)
  * @file: Pointer to the file
  * @file_path: path of the file
  */
-void r_file(FILE *file, char* file_path)
+void r_file(FILE *file, char *file_path)
 {
 	/*count the lines*/
 	int i = 0;

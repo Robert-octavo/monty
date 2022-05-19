@@ -20,5 +20,6 @@ int main(int argc, char **argv)
 /*		printf("First %s \n", argv[1]);*/
 		o_file(argv[1]);
 	}
+	_free();
 	return (0);
 }

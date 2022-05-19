@@ -35,7 +35,7 @@ void get_function(char *code, char *value, int i)
 	if (check == 0)
 	{
 /*print the messaje de line number and the opcode*/
-		printf("L%d: Unknown Instruction %s\n", i, code);
+		printf("L%d: unknown instruction %s\n", i, code);
 		/*liberar node ?????*/
 		_free();
 		exit(EXIT_FAILURE);

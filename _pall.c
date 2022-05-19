@@ -10,7 +10,7 @@ void _pall(stack_t  **stack, __attribute__((__unused__)) unsigned int i)
 /*   printf("enter pall: %d", i);*/
 	stack_t *tmp;
 /*   (void) i;*/
-	if (stack == NULL)
+	if (stack == NULL || *stack == NULL)
 		exit(EXIT_FAILURE);
 	tmp = *stack;
 	while (tmp != NULL)

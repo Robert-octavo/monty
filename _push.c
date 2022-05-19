@@ -11,7 +11,7 @@ void _push(stack_t **new, __attribute__((__unused__)) unsigned int i)
 /*   printf("enter _push: %d", i);*/
 	stack_t *tmp;
 	/*(void) i;*/
-	if (*new == NULL)
+	if (*new == NULL || new == NULL)
 		exit(EXIT_FAILURE);
 
 	if (head == NULL)

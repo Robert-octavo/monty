@@ -18,7 +18,9 @@ void get_function(char *code, char *value, int i)
 		/*{"add", _add},*/
 		{NULL, NULL}
 	};
-
+/*Check for # comments in monty*/
+	if (code[0] == '#')
+		return;
 	for (check = 0, j = 0; function_list[j].opcode != NULL; j++)
 	{
 /*compare with strcmp what i got on code and in the current position*/

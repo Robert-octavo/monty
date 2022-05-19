@@ -4,12 +4,12 @@
  * @new: Pointer to the top node of the stack
  * @i: Line number
  */
-void _pall(stack_t  **stack, unsigned int i)
+void _pall(stack_t  **stack, __attribute__((__unused__)) unsigned int i)
 {
 /*check if it enter to the function*/
- /*   printf("enter pall: %d", i);*/
+/*   printf("enter pall: %d", i);*/
     stack_t *tmp;
-    (void) i;
+/*   (void) i;*/
     if (stack == NULL)
         exit(EXIT_FAILURE);
     tmp = *stack;

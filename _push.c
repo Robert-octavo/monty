@@ -5,12 +5,12 @@
  * @i: Line number
  */
 
-void _push(stack_t **new, unsigned int i)
+void _push(stack_t **new, __attribute__((__unused__)) unsigned int i)
 {
 /*check if it enter to the function*/
 /*   printf("enter _push: %d", i);*/
     stack_t *tmp;
-    (void) i;
+    /*(void) i;*/
     if (*new == NULL)
         exit(EXIT_FAILURE);
 

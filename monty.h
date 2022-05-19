@@ -48,6 +48,7 @@ void get_function(char *, char *, int);
 void function_call(op_func, char *, char *, int);
 stack_t *new_node(int );
 
+
 void _push(stack_t **, unsigned int);
 void _pall(stack_t  **, unsigned int);
 void _pint(stack_t **, unsigned int);

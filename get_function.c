@@ -15,7 +15,7 @@ void get_function(char *code, char *value, int i)
 		{"pop", _pop},
 		{"swap", _swap},
 		{"nop", _nop},
-		/*{"add", _add},*/
+		{"add", _add},
 		{NULL, NULL}
 	};
 /*Check for # comments in monty*/

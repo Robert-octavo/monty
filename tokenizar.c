@@ -5,7 +5,7 @@
  * @line: Pointer to the current line
  * @i: Number of the line
  * @check_token: Integer
- * @return int
+ * Return: integer
  */
 
 int tokenizar(char *line, int i, int check_token)
@@ -22,19 +22,10 @@ int tokenizar(char *line, int i, int check_token)
 	if (code == NULL)
 		return (0);
 	value = strtok(NULL, "\t\n ");
-	<<<<<<< HEAD
-		/Test if i got the code and the value right/
-/*		=======
-/*Test if i got the code and the value right
-	>>>>>>> 5ce306adb021ea8e9ebb4f39a2615d467de0ec2e
+/*Test if i got the code and the value right*/
 /*   printf("\n%s :%d", code, i);*/
 /*    printf("\n%s :%d\n", value, i);*/
 	get_function(code, value, i);
 
-	return(check_token);
-	<<<<<<< HEAD
-	}
-	=======
-
-	>>>>>>> 5ce306adb021ea8e9ebb4f39a2615d467de0ec2e
+	return (check_token);
 }

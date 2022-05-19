@@ -7,19 +7,19 @@ stack_t *head = NULL;
  */
 stack_t *new_node(int n)
 {
-    stack_t *new_node;
+	stack_t *new_node;
 
-    new_node = malloc(sizeof(stack_t));
+	new_node = malloc(sizeof(stack_t));
 
-    if (new_node == NULL)
-    {
-        printf("Error: malloc failed\n");
-        /*free before exit*/
-        exit(EXIT_FAILURE);
-    }
+	if (new_node == NULL)
+	{
+		printf("Error: malloc failed\n");
+		/*free before exit*/
+		exit(EXIT_FAILURE);
+	}
 
-    new_node->next = NULL;
-    new_node->prev = NULL;
-    new_node->n = n;
-    return (new_node);
+	new_node->next = NULL;
+	new_node->prev = NULL;
+	new_node->n = n;
+	return (new_node);
 }

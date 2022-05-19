@@ -43,10 +43,10 @@ extern stack_t *head;
 
 void o_file(char *file_path);
 void r_file(FILE *file);
-int tokenizar(char *, int , int);
+int tokenizar(char *, int, int);
 void get_function(char *, char *, int);
 void function_call(op_func, char *, char *, int);
-stack_t *new_node(int );
+stack_t *new_node(int);
 
 
 void _push(stack_t **, unsigned int);

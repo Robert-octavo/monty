@@ -11,11 +11,11 @@ void get_function(char *code, char *value, int i)
 	instruction_t function_list[] = {
 		{"push", _push},
 		{"pall", _pall},
-		/*{"pint", _pint},
-		{"pop", _pop},
-		{"swap", _swap},
-		{"nop", _nop},
-		{"add", _add},*/
+		/*{"pint", _pint},*/
+		/*{"pop", _pop},*/
+		/*{"swap", _swap},*/
+		/*{"nop", _nop},*/
+		/*{"add", _add},*/
 		{NULL, NULL}
 	};
 

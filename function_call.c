@@ -22,7 +22,8 @@ void function_call(op_func function, char *code, char *value, int i)
 		}
 		if (value == NULL)
 		{
-		printf("L%d: usage: push integer\n", i);
+			printf("L%d: usage: push integer\n", i);
+			_free();
 			exit(EXIT_FAILURE);
 		}
 		for (j = 0; value[j] != '\0'; j++)
@@ -30,6 +31,7 @@ void function_call(op_func function, char *code, char *value, int i)
 			if (isdigit(value[j]) == 0)
 			{
 				printf("L%d: usage: push integer\n", i);
+				_free();
 				exit(EXIT_FAILURE);
 			}
 		}

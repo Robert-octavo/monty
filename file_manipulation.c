@@ -12,6 +12,7 @@ void o_file(char *file_path)
 	if (file_path == NULL)
 	{
 		printf("Error: Can't open file %s\n", file_path);
+		_free();
 		exit(EXIT_FAILURE);
 	}
 /*file exist*/
@@ -20,6 +21,7 @@ void o_file(char *file_path)
 	if (file_exist == -1)
 	{
 		printf("Error: Can't open file %s\n", file_path);
+		_free();
 		exit(EXIT_FAILURE);
 	}
 
@@ -27,6 +29,7 @@ void o_file(char *file_path)
 	if (file == NULL)
 	{
 		printf("Error: Can't open file %s\n", file_path);
+		_free();
 		exit(EXIT_FAILURE);
 	}
 
@@ -56,6 +59,8 @@ void r_file(FILE *file)
 	if (file == NULL)
 	{
 		printf("Error: Can't Open file %s\n", "file name");
+		_free();
+		exit(EXIT_FAILURE);
 	}
 
 	for (i = 1; getline(&line, &n, file) != EOF; i++)

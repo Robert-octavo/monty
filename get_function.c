@@ -14,7 +14,7 @@ void get_function(char *code, char *value, int i)
 		/*{"pint", _pint},*/
 		/*{"pop", _pop},*/
 		/*{"swap", _swap},*/
-		/*{"nop", _nop},*/
+		{"nop", _nop},
 		/*{"add", _add},*/
 		{NULL, NULL}
 	};

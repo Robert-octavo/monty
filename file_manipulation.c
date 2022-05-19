@@ -11,7 +11,7 @@ void o_file(char *file_path)
 
 	if (file_path == NULL)
 	{
-		printf("Error: Can't open file %s", file_path);
+		printf("Error: Can't open file %s\n", file_path);
 		exit(EXIT_FAILURE);
 	}
 /*file exist*/
@@ -19,14 +19,14 @@ void o_file(char *file_path)
 /*if the return of access it is -1 - cannot acces the file*/
 	if (file_exist == -1)
 	{
-		printf("Error: Can't open file %s", file_path);
+		printf("Error: Can't open file %s\n", file_path);
 		exit(EXIT_FAILURE);
 	}
 
 	file = fopen(file_path, "r");
 	if (file == NULL)
 	{
-		printf("Error: Can't open file %s", file_path);
+		printf("Error: Can't open file %s\n", file_path);
 		exit(EXIT_FAILURE);
 	}
 
@@ -55,15 +55,15 @@ void r_file(FILE *file)
 
 	if (file == NULL)
 	{
-		printf("Error: Can't Open file");
+		printf("Error: Can't Open file %s\n", "file name");
 	}
 
 	for (i = 1; getline(&line, &n, file) != EOF; i++)
 	{
 /*Test to Know if we are readind the files*/
 /*printf("%s", line);*/
-		check_token = tokenizar(line, i);
-		printf("\n from main: %d ", check_token);
+		check_token = tokenizar(line, i, check_token);
+/*		printf("\n from main: %d ", check_token);*/
 	}
 	free(line);
 }

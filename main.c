@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 	else
 	{
 /*Check for the file - if i get the path from argv*/
-		printf("First %s \n", argv[1]);
+/*		printf("First %s \n", argv[1]);*/
 		o_file(argv[1]);
 	}
 	return (0);

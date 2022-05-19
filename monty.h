@@ -38,10 +38,16 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+typedef void (*op_func)(stack_t **, unsigned int);
+extern stack_t *head;
+
 void o_file(char *file_path);
 void r_file(FILE *file);
-int tokenizar(char *line, int i);
-void get_function(void);
+int tokenizar(char *, int , int);
+void get_function(char *, char *, int);
+void function_call(op_func, char *, char *, int);
+stack_t *new_node(int );
+
 void _push(stack_t **, unsigned int);
 void _pall(stack_t  **, unsigned int);
 void _pint(stack_t **, unsigned int);

@@ -12,7 +12,7 @@ void get_function(char *code, char *value, int i)
 		{"push", _push},
 		{"pall", _pall},
 		{"pint", _pint},
-		/*{"pop", _pop},*/
+		{"pop", _pop},
 		{"swap", _swap},
 		{"nop", _nop},
 		/*{"add", _add},*/

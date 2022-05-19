@@ -58,7 +58,7 @@ void r_file(FILE *file)
 
 	if (file == NULL)
 	{
-		printf("Error: Can't Open file %s\n", "file name");
+		printf("Error: Can't open file %s\n", "file name");
 		_free();
 		exit(EXIT_FAILURE);
 	}

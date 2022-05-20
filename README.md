@@ -172,4 +172,30 @@ The result of which will be as follows:<br>
 <br>
 <h2>Bugs</h2>
 <br>Here is a small list of bugs that were fixed. This program is still under review.<br>
+<h2>Files</h2><br>
+Files include are:<br>
+README.md<br>
+_add.c<br>
+_div.c<br>
+_free.c<br>
+_mod.c<br>
+_mul.c<br>
+_nop.c<br>
+_pall.c<br>
+_pchar.c<br>
+_pint.c<br>
+_pop.c<br>
+_pstr.c<br>
+_push.c<br>
+_sub.c<br>
+_swap.c<br>
+file_manipulation.c<br>
+function_call.c<br>
+get_function.c<br>
+main.c<br>
+monty<br>
+monty.h<br>
+new_node.c<br>
+tokenizar.c<br>
+<br>
 <br>

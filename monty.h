@@ -60,6 +60,7 @@ void _sub(stack_t  **, unsigned int);
 void _mul(stack_t  **, unsigned int);
 void _div(stack_t  **, unsigned int);
 void _mod(stack_t  **, unsigned int);
+void _pchar(stack_t **, unsigned int);
 
 void _free(void);
 

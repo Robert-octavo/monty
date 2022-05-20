@@ -162,7 +162,7 @@ julien@ubuntu:~/monty$
 2<br>
 1<br>
 <br>
-<strong>./monty bytecodes/12.m<br>
+<strong>./monty bytecodes/12.m</strong><br>
 
 The result of which will be as follows:<br>
 3<br>

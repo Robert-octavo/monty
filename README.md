@@ -204,4 +204,3 @@ Written by Robert Ortega & Ricardo Montaña.<br>
 May 19th, 2022<br>
 <h2>Copyright</h2>
 © All rights reserved<br>
-<br>

@@ -7,13 +7,19 @@
  */
 void _rotr(stack_t **stack, unsigned int i)
 {
-    stack_t *tmp;
+	stack_t *tmp;
 
-    (void)i;
-    if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
-        return;
+	(void)i;
+	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
+		return;
 /*go to the last node*/
-    tmp = *stack;
-    while (tmp->next != NULL)
-        tmp = tmp->next;
+	tmp = *stack;
+	while (tmp->next != NULL)
+		tmp = tmp->next;
+
+	tmp->next = *stack;
+	(tmp->prev)->next = NULL;
+	tmp->prev = NULL;
+	(*stack)->prev = tmp;
+	(*stack) = tmp;
 }

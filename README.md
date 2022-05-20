@@ -172,7 +172,7 @@ The result of which will be as follows:<br>
 <br>
 <h2>Bugs</h2>
 <br>Here is a small list of bugs that were fixed. This program is still under review.<br>
-<h2>Files</h2><br>
+<h2>Files</h2>
 Files include are:<br>
 README.md<br>
 _add.c<br>

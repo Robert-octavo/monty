@@ -12,7 +12,7 @@ void _pchar(stack_t  **stack, unsigned int i)
 
 	if (stack == NULL || *stack == NULL)
 	{
-		dprintf(2, "L%d: can't pchar, stack empty", i);
+		dprintf(2, "L%d: can't pchar, stack empty\n", i);
 		_free();
 		exit(EXIT_FAILURE);
 	}
@@ -20,7 +20,7 @@ void _pchar(stack_t  **stack, unsigned int i)
 /*value out of the ASCII range*/
 	if (value < 0 || value > 127)
 	{
-		dprintf(2, "L%d: can't pchar, value out of range", i);
+		dprintf(2, "L%d: can't pchar, value out of range\n", i);
 		_free();
 		exit(EXIT_FAILURE);
 	}

@@ -23,6 +23,7 @@ void get_function(char *code, char *value, int i)
 		{"pchar", _pchar},
 		{"pstr", _pstr},
 		{"rotl", _rotl},
+		{"rotr", _rotr},
 		{NULL, NULL}
 	};
 /*Check for # comments in monty*/

@@ -151,10 +151,15 @@ julien@ubuntu:~/monty$
 <p>To run the monty program it is necessary to take into account the path where the files to be interpreted are located.<br />For the purposes of this example, the files are contained in the bytecodes directory, therefore the name of the folder and the name of the file must be separated by the slash symbol ( / ).</p>
 <p><span style="color: #0000ff;">./monty bytecodes/00.m</span></p>
 <p>The result of which will be as follows:</p>
-<p><span style="color: #0000ff;"><code>3<br /></code></span><span style="color: #0000ff;"><code>2<br />
-1</code><br /><br /></span></p>
-<p><code>./monty bytecodes/12.m<br /></code><br />The result of which will be as follows:<br /><code><p>3<p>
-<p>2<p>
-<p>1<p>
-<p>5<p>
-<p>1<p></code>
+3
+2
+1
+
+./monty bytecodes/12.m
+
+The result of which will be as follows:
+3
+2
+1
+5
+1

@@ -154,7 +154,7 @@ julien@ubuntu:~/monty$
 <li>If you can&rsquo;t malloc anymore, print the error message <code>Error: malloc failed</code>, followed by a new line, and exit with status <code>EXIT_FAILURE</code>.</li>
 <li>You have to use <code>malloc</code> and <code>free</code> and are not allowed to use any other function from <code>man malloc</code> (realloc, calloc, &hellip;)</li>
 </ul>
-<p><strong>Examples</strong></p>
+<p2>Examples</p2>
 <p>To run the monty program it is necessary to take into account the path where the files to be interpreted are located.<br />For the purposes of this example, the files are contained in the bytecodes directory, therefore the name of the folder and the name of the file must be separated by the slash symbol ( / ).</p>
 <p><span style="color: #0000ff;">./monty bytecodes/00.m</span></p>
 <p>The result of which will be as follows:</p>

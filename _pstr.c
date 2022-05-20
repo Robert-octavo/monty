@@ -22,8 +22,8 @@ void _pstr(stack_t  **stack, unsigned int i)
     /*value out of the ASCII range - stop */
         if (value < 0 || value > 127)
             break;
-        printf("%c\n", value);
+        printf("%c", value);
         *stack = (*stack)->next;
     }
-        
+    printf("/n");
 }

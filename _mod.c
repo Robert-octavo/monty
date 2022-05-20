@@ -1,17 +1,18 @@
 #include "monty.h"
 /**
- * _div - The opcode div divides the second top element
- * of the stack by the top element of the stack.
+ * _mod - The opcode mod computes the rest of the division
+ * of the second top element of the stack by the top element
+ * of the stack.
  * @stack: Pointer to the new node
  * @i: Line number
  */
-void _div(stack_t  **stack, unsigned int i)
+void _mod(stack_t  **stack, unsigned int i)
 {
-	int div;
+	int mod;
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
 	{
-		dprintf(2, "L%d: can't div, stack too short\n", i);
+		dprintf(2, "L%d: can't mod, stack too short\n", i);
 		_free();
 		exit(EXIT_FAILURE);
 	}
@@ -24,10 +25,10 @@ void _div(stack_t  **stack, unsigned int i)
 	}
 /*Next node*/
 	(*stack) = (*stack)->next;
-/*div current n and the n from the previus*/
-	div = (*stack)->n / (*stack)->prev->n;
+/*mod current n and the n from the previus*/
+	mod = (*stack)->n / (*stack)->prev->n;
 /*replace the value (n) for the current node with add*/
-	(*stack)->n = div;
+	(*stack)->n = mod;
 /*free the previus*/
 	free((*stack)->prev);
 	(*stack)->prev = NULL;

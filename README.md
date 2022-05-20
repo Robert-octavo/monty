@@ -153,8 +153,8 @@ julien@ubuntu:~/monty$
 <p>The result of which will be as follows:</p>
 <p><span style="color: #0000ff;"><code>3<br /></code></span><span style="color: #0000ff;"><code>2<br />
 1</code><br /><br /></span></p>
-<p><code>./monty bytecodes/12.m<br /></code><br />The result of which will be as follows:<br /><code>3<br />
-2<br />
-1<br />
-5<br />
-1</code><br />
+<p><code>./monty bytecodes/12.m<br /></code><br />The result of which will be as follows:<br /><code><p>3<p>
+<p>2<p>
+<p>1<p>
+<p>5<p>
+<p>1<p></code>

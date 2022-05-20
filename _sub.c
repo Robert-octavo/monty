@@ -16,12 +16,12 @@ void _sub(stack_t  **stack, unsigned int i)
 		exit(EXIT_FAILURE);
 	}
 /*Next node*/
-    (*stack) = (*stack)->next;
+	(*stack) = (*stack)->next;
 /*sub current n and the n from the previus*/
-    sub = (*stack)->n - (*stack)->prev->n;
+	sub = (*stack)->n - (*stack)->prev->n;
 /*replace the value (n) for the current node with add*/
-    (*stack)->n = sub;
+	(*stack)->n = sub;
 /*free the previus*/
-    free((*stack)->prev);
-    (*stack)->prev = NULL;
+	free((*stack)->prev);
+	(*stack)->prev = NULL;
 }

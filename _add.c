@@ -16,12 +16,12 @@ void _add(stack_t  **stack, unsigned int i)
 		exit(EXIT_FAILURE);
 	}
 /*Next node*/
-    (*stack) = (*stack)->next;
+	(*stack) = (*stack)->next;
 /*add current n and the n from the previus*/
-    add = (*stack)->n + (*stack)->prev->n;
+	add = (*stack)->n + (*stack)->prev->n;
 /*replace the value (n) for the current node with add*/
-    (*stack)->n = add;
+	(*stack)->n = add;
 /*free the previus*/
-    free((*stack)->prev);
-    (*stack)->prev = NULL;
+	free((*stack)->prev);
+	(*stack)->prev = NULL;
 }

@@ -7,7 +7,7 @@
  */
 void _mul(stack_t  **stack, unsigned int i)
 {
-	int add;
+	int mul;
 
 	if (stack == NULL || *stack == NULL || (*stack)->next == NULL)
 	{
@@ -18,9 +18,9 @@ void _mul(stack_t  **stack, unsigned int i)
 /*Next node*/
 	(*stack) = (*stack)->next;
 /*mul current n and the n from the previus*/
-	add = (*stack)->n * (*stack)->prev->n;
+	mul = (*stack)->n * (*stack)->prev->n;
 /*replace the value (n) for the current node with add*/
-	(*stack)->n = add;
+	(*stack)->n = mul;
 /*free the previus*/
 	free((*stack)->prev);
 	(*stack)->prev = NULL;

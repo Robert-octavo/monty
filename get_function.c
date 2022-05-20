@@ -21,6 +21,7 @@ void get_function(char *code, char *value, int i)
 		{"div", _div},
 		{"mod", _mod},
 		{"pchar", _pchar},
+		{"pstr", _pstr},
 		{NULL, NULL}
 	};
 /*Check for # comments in monty*/

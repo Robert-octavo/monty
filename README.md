@@ -171,7 +171,7 @@ The result of which will be as follows:<br>
 1<br>
 <br>
 <h2>Bugs</h2>
-<br>Here is a small list of bugs that were fixed. This program is still under review.<br>
+Here is a small list of bugs that were fixed. This program is still under review.<br>
 <h2>Files</h2>
 Files include are:<br>
 README.md<br>

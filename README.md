@@ -200,4 +200,8 @@ tokenizar.c<br>
 <br>
 <h2>History</h2>
 This is the first version<br>
-<br>
+<h2>Authors</h2>
+Written by Robert Ortega & Ricardo Montaña.<br>
+19th May 2022<br>
+<h2>Copyright</h2>
+© All rights reserved<br>

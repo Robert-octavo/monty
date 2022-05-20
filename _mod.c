@@ -26,7 +26,7 @@ void _mod(stack_t  **stack, unsigned int i)
 /*Next node*/
 	(*stack) = (*stack)->next;
 /*mod current n and the n from the previus*/
-	mod = (*stack)->n / (*stack)->prev->n;
+	mod = (*stack)->n % (*stack)->prev->n;
 /*replace the value (n) for the current node with add*/
 	(*stack)->n = mod;
 /*free the previus*/

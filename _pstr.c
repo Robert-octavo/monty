@@ -9,7 +9,7 @@ void _pstr(stack_t  **stack, unsigned int i)
 {
     /*to save the ASCII Value of the (n) in the stack*/
 	int value;
-    stack_t *tmp;
+	stack_t *tmp;
 	(void)i;
 
 	if (stack == NULL || *stack == NULL)
@@ -17,7 +17,7 @@ void _pstr(stack_t  **stack, unsigned int i)
 		printf("\n");
 		return;
 	}
-    tmp = *stack;
+	tmp = *stack;
 	while (tmp)
 	{
 		value = tmp->n;

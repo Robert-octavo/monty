@@ -25,7 +25,6 @@ separate numbers
 <-
 <+++++ +++++>>>[-<<<->>>]<<<
 
-
 convert to ascii
 <+++++ +
 [
@@ -36,6 +35,3 @@ convert to ascii
 
 print
 >>[.<<]<[<<]>>.
-
-I used this interpreter: http://esoteric.sange.fi/brainfuck/impl/interp/i.html
-Sha

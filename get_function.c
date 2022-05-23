@@ -9,21 +9,11 @@ void get_function(char *code, char *value, int i)
 {
 	int j, check;
 	instruction_t function_list[] = {
-		{"push", _push},
-		{"pall", _pall},
-		{"pint", _pint},
-		{"pop", _pop},
-		{"swap", _swap},
-		{"nop", _nop},
-		{"add", _add},
-		{"sub", _sub},
-		{"mul", _mul},
-		{"div", _div},
-		{"mod", _mod},
-		{"pchar", _pchar},
-		{"pstr", _pstr},
-		{"rotl", _rotl},
-		{"rotr", _rotr},
+		{"push", _push}, {"pall", _pall}, {"pint", _pint},
+		{"pop", _pop}, {"swap", _swap}, {"nop", _nop},
+		{"add", _add}, {"sub", _sub}, {"mul", _mul},
+		{"div", _div}, {"mod", _mod}, {"pchar", _pchar},
+		{"pstr", _pstr}, {"rotl", _rotl}, {"rotr", _rotr},
 		{NULL, NULL}
 	};
 /*Check for # comments in monty*/
